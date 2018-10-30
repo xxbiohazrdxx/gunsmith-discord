@@ -18,7 +18,7 @@ The standard usage looks like this:
 `@Gunsmith MyGamertag xbox hunter primary`
  
 with a response looking like (active nodes in bold): 
-![image](https://user-images.githubusercontent.com/24279336/47389538-097e6a00-d6e3-11e8-8285-260d135801cb.png) 
+![image](https://user-images.githubusercontent.com/24279336/47749395-72299180-dc63-11e8-8038-7131e884deac.png) 
  
 ### Advanced Options
 If `default_platform` is set, you can omit your gaming platform from the request.  
@@ -63,7 +63,9 @@ There should also be two automatically created configuration variables, they sho
 - `HEROKU_URL` The URL to your Heroku dyno, used for keeping the Gunsmith awake.  
 - `DATABASE_URL` The URL to your PostgreSQL database, used for connecting to the database.
  
-Convert your app to a bot, and add the bot to your server.
+Convert your app to a bot, and copy the bot Client ID.
+Insert the Client ID into this link, and paste it into your browser to add the bot to your server.
+`https://discordapp.com/oauth2/authorize?client_id=<Bot_Client_ID>&scope=bot&permissions=0`
 
 Note: Free Heroku dynos are limited to 550 hours per month, meaning that eventually your Gunsmith bot will suspended before the month is out. You may, if you so desire, get an additional 450 dyno hours by adding a valid credit card to Heroku.
  
